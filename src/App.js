@@ -1,15 +1,11 @@
-import { BrowserRouter as Router } from 'react-router-dom';
+import { RouterProvider } from 'react-router-dom';
 import './App.css';
-import Header from './component/common/Heading/Header';
-
-
+import router from './Router/Routes/Routes';
 
 function App() {
   return (
     <div>
-      <Router>
-      <Header/>
-      </Router>
+      <RouterProvider router={router}></RouterProvider>
     </div>
   );
 }
